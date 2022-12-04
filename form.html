@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head><script src="form.js"></script></head>
+    <body>
+        <form action="https://script.google.com/macros/s/AKfycbzNAOFJqLw1Wr5Q9OCqQR27VAe60SgxS-rkylT9Edm0jkBMfF7_hCgUMhe7f8WljOQFLA/exec" onsubmit="formValidation()" method="" name="interest">
+            <fieldset>
+                <div>
+                    <label>Name: <br>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" 
+                        onchange="return validateName()" required/>
+                        <span id="nameError" style="color:red;font-size:13px;"></span>
+                    </label>
+                </div>
+                <div>
+                    <label>Phone: <br>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" 
+                        onchange="return validatePhone()" required/>
+                        <span id="phoneError" style="color:red;font-size:13px;"></span>
+                    </label>
+                </div>
+                <button type="submit" id="submit-form">Submit</button>
+            </fieldset>
+        </form>
+    </body>
+</html>
